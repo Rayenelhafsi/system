@@ -31,4 +31,16 @@ if (strtolower(pathinfo($target, PATHINFO_EXTENSION)) !== "php") {
     exit("Forbidden.");
 }
 
-require $target;
+$originalCwd = getcwd();
+$targetDir = dirname($target);
+$targetFile = basename($target);
+
+if ($targetDir !== false) {
+    chdir($targetDir);
+}
+
+require $targetFile;
+
+if ($originalCwd !== false) {
+    chdir($originalCwd);
+}
