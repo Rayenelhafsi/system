@@ -1,7 +1,7 @@
 <?php
 $host = "sql211.infinityfree.com";
 $port = 3306;
-$dbname = "if0_41093564_XXX";
+$dbname = "if0_41093564_dwira_db";
 $user = "if0_41093564";
 $pass = "zjPKeAyYuJHRHA";
 
