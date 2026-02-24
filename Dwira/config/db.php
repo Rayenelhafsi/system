@@ -1,9 +1,9 @@
 <?php
-$host = "localhost";
-$port = 3307;
-$dbname = "dwira_db";
-$user = "root";
-$pass = "";
+$host = "sql211.infinityfree.com";
+$port = 3306;
+$dbname = "if0_41093564_XXX";
+$user = "if0_41093564";
+$pass = "zjPKeAyYuJHRHA";
 
 try {
     $pdo = new PDO(
